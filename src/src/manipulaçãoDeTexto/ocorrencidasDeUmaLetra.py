@@ -1,4 +1,4 @@
-#026            Ocorrencias de qualquer em uma frase
+#026            Ocorrencias de uma letra qualquer em uma frase
 frase = input('Digite uma frase: ')
 letra = input('Digite uma letra: ')
 frase = frase.upper()
