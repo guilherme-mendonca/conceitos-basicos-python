@@ -1,8 +1,8 @@
 #       Praticas de aprendizado comentadas
 
-t = int(input('Digite o tempo:'))
-d = int(input('Digite a distância:'))
-v = float(print('A velocidade média é {}'.format(d/t)))
+t = float(input('Digite o tempo em horas:'))
+d = float(input('Digite a distância:'))
+(print('A velocidade média é {:.2f}Km/h'.format(d/t)))
 
 n1 = int(input('Digite um valor:'))
 n2 = int(input('Digite outro valor:'))
@@ -24,13 +24,15 @@ print(f'O número digitado foi {n}, seu antecessor é {a} e o seu sucessor é {s
 import random       #randint voce gera um numero inteiro
 num = random.randint(1, 7)
 print(num)
+do = n * 2
+tr = n*3
 r = n **(1/2)
-print(f'O número digitado foi {n}, o seu dobro é {d}, e o seu triplo é {t} e a sua raiz quadrada é {r:.3f}')
+print(f'O número digitado foi {n}, o seu dobro é {do}, e o seu triplo é {tr} e a sua raiz quadrada é {r:.3f}')
 
 #           Fatiamento de strings
 frase = 'Python é muito divertido'
 print(frase[::5])   #vai recortar a frase do começo ate o final de 5 em 5
-print[1:12:1]  #vai recortar a frase do 1 ao 12 pulando de dois em dois
+print[1:3:1]  #vai recortar a frase do 1 ao 12 pulando de dois em dois
 print(frase.upper().count('O'))
 print(len(frase.strip()))
 print(frase.replace('Python', 'Dançar'))   #vai trocar a palavra fumar para dançar
