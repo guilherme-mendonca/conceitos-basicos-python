@@ -18,12 +18,12 @@ from time import sleep
 print('='*28,'Jogo do Palpite','='*28)
 jogar = (input('\nQuer jogar um jogo? Digite SIM(s) ou NÃO(n): ')).lower()
 
-while True: #Inicia um loop novo for igual a sim
+while True: #Inicia um loop. Se a variável novo for igual a sim
     if jogar not in ['sim', 's', 'n', 'nao', 'não']: #O operador 'not in' verifica se determinado valor esta ausente em uma sequencia
         print('Erro, por favor reinicie o programa')
-        break
+        break #Break para o programa
     
-    if jogar == 'n' or jogar == 'nao' or jogar == 'não':
+    if jogar == 'n' or jogar == 'nao' or jogar == 'não':#Se o valor de jogar for igual n, não ou nao roda print
         print('Tudo bem, até a proxima!')
         break
     
@@ -44,9 +44,9 @@ while True: #Inicia um loop novo for igual a sim
     else: #Se o número digitado nao for igual ao pensado voce perdeu
         print(f'\33[1;31mHehehe, você errou! Eu pensei no número {num}\033[m.\n')
     
-    novo = input('Quer jogar novamente digite "sim(s)" ou "não(n)" ').lower()
+    novo = input('Quer jogar novamente digite "sim(s)" ou "não(n)" ').lower() #Pergunta se o usuario quer jogar novamente e coloca a reposta dele em minuscula
     
-    if novo not in ['sim', 's', 'n', 'não', 'nao']: #Se o valor de novo estiver na sequancia o proframa dá erro
+    if novo not in ['sim', 's', 'n', 'não', 'nao']: #Se o valor de novo estiver na sequência o programa dá erro
         print('Erro, por favor reinicie o programa!')
         break #Break para o programa
     
@@ -54,4 +54,4 @@ while True: #Inicia um loop novo for igual a sim
         print('Tudo bem meu chapa, até a próxima.')
         break
     else:
-        continue #Continue- o prgrama continua rodar
+        continue #Continue, o prgrama continua rodar no loop
