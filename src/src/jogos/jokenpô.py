@@ -34,7 +34,7 @@ while True:
             sleep(2) #O comando sleep faz com que o computador "durma" por um determinado tempo
             
         if computador == usuario:
-            print('Empate!')
+            print('\033[33mEmpate!\033[m')
                 
         elif computador == 'pedra' and usuario == 'papel' or computador == 'papel' and usuario == 'tesoura' or computador == 'tesoura' and usuario == 'pedra':
             print(f'\n\033[32mVitória! {usuario} ganha de {computador}\033[m.')
